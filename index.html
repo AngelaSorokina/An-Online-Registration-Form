@@ -54,6 +54,25 @@
           <input type="text" id="code" name="zip_code">
         </div>
       </fieldset>
+      <fieldset>
+        <legend>Newsletter</legend>
+        <div class="form-container">
+          <label> Select the newsletters you would like to receive </label>
+          <input type="checkbox" id="html" value="html" name="newsletters-type" class="checkbox1"><Label for="html">HTML News</label><br>
+          <input type="checkbox" id="css" value="css" name="newsletters-type" class="checkbox2"><Label for="css">Css News</label><br>
+          <input type="checkbox" id="javascript" value="javascript" name="newsletters-type" class="checkbox3"><Label for="javascript">Javascript News</label><br>
+        </div>
+        <div class="form-container">
+          <label> Newsletter format </label>
+          <input type="radio" id="html" value="html" name="newsletters-format" class="radio1"><Label for="html">HTML</label><br>
+          <input type="radio" id="text" value="text" name="newsletters-format" class="radio2"><Label for="text">Plain text</label><br>
+        </div>
+        <div class="form-container">
+          <label for="other-topics"> Other topics you’d like to hear about</label>
+          <textarea id="other-topics" name="other-user-topics"></textarea>
+        </div>
+        <button type="submit">Sign Up</button>
+      </fieldset>
     </form>
   </main>
 
