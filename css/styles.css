@@ -26,7 +26,6 @@ p, label {
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 136%;
-  margin: 8px 0;
 }
 label {
   color:#55687A;
@@ -63,13 +62,24 @@ em {
   max-width: 90%;
   text-align: center;
 }
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap:28px;
+  align-items: center;
+  width: 100%;
+  padding: 28px 0;
+  margin: 28px 0;
+  background-color: #FAFCFC;
+}
 .form-container,
 .checkbox-container,
 .radio-container,
 .textarea-container {
   display: flex;
   flex-direction: column;
-  padding-bottom: 16px;
+  max-width: 100%;
+  row-gap:16px;
 }
 .checkbox-container,
 .radio-container,
@@ -77,15 +87,17 @@ em {
   padding-bottom: 16px;
 }
 fieldset {
-  margin: 28px auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
   padding: 0;
-  max-width: 90%;
+  width: 90%;
   border: none;
 }
 /* Deviders */
 .hr-bold, .hr-light {
   border: none;
-  max-width: 90%;
+  width: 90%;
   background-color: #2D3945;
 }
 .hr-bold {
@@ -94,7 +106,7 @@ fieldset {
 }
 .hr-light {
   height: 2px;
-  margin: auto;
+  margin: 0 auto;
 }
 /*Form elements*/
 input:not([type="checkbox"]):not([type="radio"]),
@@ -144,10 +156,12 @@ textarea {
   height: 100px;
 }
 button {
-  margin: 8px 0;
   background: #4EBBB5;
   height: 60px;
   color: white;
+}
+button:focus {
+  outline: 2px solid #46698B;
 }
 .copiright {
   margin-bottom:15vh;
@@ -161,6 +175,11 @@ button {
     font-size: 1.5rem;
   }
   /*Form elements*/
+  form {
+    row-gap:40px;
+    padding: 40px 0;
+    margin: 40px 0;
+  }
   input:not([type="checkbox"]):not([type="radio"]),
   select{
     flex-grow: 1;
@@ -180,8 +199,5 @@ button {
   }
   .form-container.zip {
     max-width: 65%;
-  }
-  fieldset {
-    margin: 40px auto;
   }
 }
