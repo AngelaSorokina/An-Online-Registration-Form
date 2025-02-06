@@ -60,7 +60,7 @@
                 <option value="NY">New York</option>
               </select>
         </div>
-        <div class="form-container">
+        <div class="form-container zip">
           <label for="code">Zip Code</label>
           <input type="text" id="code" name="zip_code" placeholder="5-digit ZIP">
         </div>
@@ -68,7 +68,7 @@
       <hr class="hr-light">
       <fieldset>
         <legend>Newsletter</legend>
-        <div class="form-container">
+        <div class="checkbox-container">
           <label> Select the newsletters you would like to receive </label>
           <div class="checkbox">
             <input type="checkbox" id="html-news" value="html" name="newsletters-type" class="checkbox1"><Label for="html-news">HTML News</label>
@@ -80,16 +80,16 @@
             <input type="checkbox" id="javascript" value="javascript" name="newsletters-type" class="checkbox3"><Label for="javascript">Javascript News</label><br>
           </div>
         </div>
-        <div class="form-container">
+        <div class="radio-container">
           <label> Newsletter format </label>
           <div class="radio">
-            <input type="radio" id="html" value="html" name="newsletters-format" class="radio1" checked><Label for="html">HTML</label>
+            <input type="radio" id="html" value="html" name="newsletters-format" class="radio1"><Label for="html">HTML</label>
           </div>
           <div class="radio">
-            <input type="radio" id="text" value="text" name="newsletters-format" class="radio2"><Label for="text">Plain text</label>
+            <input type="radio" id="plain-text" value="text" name="newsletters-format" class="radio2"><Label for="plain-text">Plain text</label>
           </div>
         </div>
-        <div class="form-container">
+        <div class="textarea-container">
           <label for="other-topics"> Other topics you’d like to hear about</label>
           <textarea id="other-topics" name="other-user-topics"  placeholder="Topics of interest"></textarea>
         </div>

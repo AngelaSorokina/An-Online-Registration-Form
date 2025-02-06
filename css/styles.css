@@ -15,6 +15,9 @@ span,h1,legend,button  {
   font-weight: 700;
   line-height: 150%;
 }
+h1 {
+  margin: 8px 0;
+}
 legend {
   padding-bottom: 20px;
 }
@@ -60,9 +63,17 @@ em {
   max-width: 90%;
   text-align: center;
 }
-.form-container {
+.form-container,
+.checkbox-container,
+.radio-container,
+.textarea-container {
   display: flex;
   flex-direction: column;
+  padding-bottom: 16px;
+}
+.checkbox-container,
+.radio-container,
+.textarea-container {
   padding-bottom: 16px;
 }
 fieldset {
@@ -121,7 +132,7 @@ select {
 select::-ms-expand {
   display: none;
 }
-#code {
+.form-container.zip {
   max-width: 50%;
 }
 .checkbox, .radio {
@@ -133,13 +144,44 @@ textarea {
   height: 100px;
 }
 button {
-  margin: 12px 0;
+  margin: 8px 0;
   background: #4EBBB5;
   height: 60px;
   color: white;
 }
 .copiright {
-  margin-bottom:10vh;
+  margin-bottom:15vh;
 }
 
 /* Styles for media queries*/
+
+@media screen and (min-width: 768px) {
+  /*Text styles*/
+  h1{
+    font-size: 1.5rem;
+  }
+  /*Form elements*/
+  input:not([type="checkbox"]):not([type="radio"]),
+  select{
+    flex-grow: 1;
+  }
+  .header-container, fieldset, .hr-bold, .hr-light {
+    max-width: 600px;
+  }
+  .header-container {
+    padding: 60px 0 40px 0;
+  }
+  .form-container {
+    flex-direction: row;
+    align-items: center;
+  }
+  label {
+    min-width: 150px;
+  }
+  .form-container.zip {
+    max-width: 65%;
+  }
+  fieldset {
+    margin: 40px auto;
+  }
+}
